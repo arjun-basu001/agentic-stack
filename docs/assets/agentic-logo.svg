@@ -1,0 +1,37 @@
+<svg width="840" height="440" viewBox="0 0 840 440" fill="none" xmlns="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Linear-gradient.svg/3840px-Linear-gradient.svg.png">
+  <defs>
+    <linearGradient id="g1" x1="72" y1="56" x2="770" y2="392" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5EEBFF"/>
+      <stop offset="1" stop-color="#8D74FF"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="20" y="20" width="800" height="400" rx="24" fill="#0C132C" stroke="#2A3B69"/>
+
+  <text x="58" y="72" fill="#E9EEFF" font-size="24" font-family="Inter, Arial, sans-serif" font-weight="700">Portable Brain Memory Model</text>
+
+  <rect x="58" y="112" width="190" height="92" rx="14" fill="#111C3F" stroke="#2D457A"/>
+  <text x="76" y="146" fill="#E7EFFF" font-size="20" font-family="Inter, Arial, sans-serif" font-weight="700">working</text>
+  <text x="76" y="174" fill="#A9BCE8" font-size="14" font-family="Inter, Arial, sans-serif">Transient session state</text>
+
+  <rect x="328" y="112" width="190" height="92" rx="14" fill="#111C3F" stroke="#2D457A"/>
+  <text x="346" y="146" fill="#E7EFFF" font-size="20" font-family="Inter, Arial, sans-serif" font-weight="700">episodic</text>
+  <text x="346" y="174" fill="#A9BCE8" font-size="14" font-family="Inter, Arial, sans-serif">Append-only event logs</text>
+
+  <rect x="598" y="112" width="190" height="92" rx="14" fill="#111C3F" stroke="#2D457A"/>
+  <text x="616" y="146" fill="#E7EFFF" font-size="20" font-family="Inter, Arial, sans-serif" font-weight="700">semantic</text>
+  <text x="616" y="174" fill="#A9BCE8" font-size="14" font-family="Inter, Arial, sans-serif">Promoted lessons</text>
+
+  <rect x="328" y="268" width="190" height="92" rx="14" fill="#111C3F" stroke="#2D457A"/>
+  <text x="346" y="302" fill="#E7EFFF" font-size="20" font-family="Inter, Arial, sans-serif" font-weight="700">personal</text>
+  <text x="346" y="330" fill="#A9BCE8" font-size="14" font-family="Inter, Arial, sans-serif">User/team preferences</text>
+
+  <path d="M253 157H322" stroke="url(#g1)" stroke-width="4"/>
+  <path d="M523 157H592" stroke="url(#g1)" stroke-width="4"/>
+  <path d="M423 208V260" stroke="url(#g1)" stroke-width="4"/>
+
+  <circle cx="423" cy="157" r="12" fill="#5EEBFF"/>
+  <circle cx="423" cy="314" r="12" fill="#8D74FF"/>
+
+  <text x="58" y="390" fill="#8FA6D9" font-size="14" font-family="Inter, Arial, sans-serif">Used by Recommendation, Support, and Inventory agents through a shared orchestrator.</text>
+</svg>
