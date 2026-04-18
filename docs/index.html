@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agentic Stack • Enterprise Agentic E-Commerce</title>
+    <meta
+      name="description"
+      content="Enterprise-grade e-commerce reference architecture using FastAPI and Agentic AI patterns."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="module">
+      import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
+      mermaid.initialize({ startOnLoad: true, theme: "dark" });
+    </script>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <a href="#home" class="brand">🧠 Agentic Stack</a>
+        <nav>
+          <a href="#architecture">Architecture</a>
+          <a href="#features">Features</a>
+          <a href="#getting-started">Getting Started</a>
+          <a href="#api">API</a>
+          <a href="#resources">Resources</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero container">
+        <div>
+          <p class="eyebrow">Enterprise Reference • FastAPI + Agentic AI</p>
+          <h1>Build reliable AI-native commerce systems with confidence.</h1>
+          <p class="subtitle">
+            Agentic Stack combines production-ready e-commerce workflows with a
+            portable multi-agent memory architecture.
+          </p>
+          <div class="actions">
+            <a class="btn primary" href="https://github.com/arjun-basu001/agentic-stack">View Repository</a>
+            <a class="btn" href="https://github.com/arjun-basu001/agentic-stack#readme">Read README</a>
+          </div>
+          <ul class="stats">
+            <li><strong>FastAPI</strong><span>Service-first API design</span></li>
+            <li><strong>Multi-Agent</strong><span>Orchestrated task handling</span></li>
+            <li><strong>Portable Brain</strong><span>.agent memory layers</span></li>
+          </ul>
+        </div>
+        <div class="hero-card">
+          <img src="./assets/agentic-logo.svg" alt="Agentic memory architecture illustration" />
+        </div>
+      </section>
+
+      <section id="architecture" class="container section">
+        <h2>🏗️ Architecture Visualization</h2>
+        <p>Layered e-commerce backend + orchestrated agent runtime with tool-driven execution.</p>
+        <div class="diagram">
+          <div class="mermaid">
+flowchart LR
+  U[Client / Frontend] --> A[FastAPI Routes]
+  A --> B[Service Layer]
+  B --> C[(SQLAlchemy + Database)]
+
+  A --> O[Agent Orchestrator]
+  O --> R[Recommendation Agent]
+  O --> S[Support Agent]
+  O --> I[Inventory Agent]
+
+  O --> T[Tool Registry]
+  T --> B
+
+  R --> M[Portable Brain]
+  S --> M
+  I --> M
+
+  M --> W[working]
+  M --> E[episodic]
+  M --> SM[semantic]
+  M --> P[personal]
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="container section">
+        <h2>🌟 Feature Highlights</h2>
+        <div class="grid three">
+          <article class="card">
+            <h3>🛒 E-Commerce Core</h3>
+            <p>Products, cart, checkout, order history, and inventory updates built with clean service boundaries.</p>
+          </article>
+          <article class="card">
+            <h3>🤖 Agentic Runtime</h3>
+            <p>Recommendation, customer support, and inventory agents coordinated via a central orchestrator.</p>
+          </article>
+          <article class="card">
+            <h3>🧠 Memory Layers</h3>
+            <p>Portable brain pattern with structured working, episodic, semantic, and personal memory stores.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="getting-started" class="container section">
+        <h2>🚀 Getting Started</h2>
+        <div class="grid two">
+          <article class="card code-card">
+            <h3>Run locally</h3>
+<pre><code>python3 -m venv .venv
+source .venv/bin/activate
+pip install -e ".[dev]"
+cp .env.example .env
+uvicorn app.main:app --reload</code></pre>
+          </article>
+          <article class="card">
+            <h3>Seeded account</h3>
+            <p><strong>Email:</strong> <code>admin@agentic-commerce.local</code></p>
+            <p><strong>Password:</strong> <code>admin123</code></p>
+            <p class="muted">Use this account to quickly test authenticated flows.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="api" class="container section">
+        <h2>🔌 API Documentation Preview</h2>
+        <div class="grid two">
+          <article class="card">
+            <h3>Core Endpoints</h3>
+            <ul>
+              <li><code>POST /api/v1/auth/login</code></li>
+              <li><code>GET /api/v1/products/</code></li>
+              <li><code>POST /api/v1/cart/items</code></li>
+              <li><code>POST /api/v1/orders/checkout</code></li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Agent Endpoints</h3>
+            <ul>
+              <li><code>GET /api/v1/agents/recommend</code></li>
+              <li><code>POST /api/v1/agents/support</code></li>
+              <li><code>GET /api/v1/agents/inventory/{product_id}</code></li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="resources" class="container section">
+        <h2>📚 Article & Research</h2>
+        <div class="grid three">
+          <a class="card link-card" href="./article.html">
+            <h3>📝 Implementation Article</h3>
+            <p>End-to-end walkthrough of design decisions and implementation patterns.</p>
+          </a>
+          <a class="card link-card" href="./research.html">
+            <h3>🔬 Research Notes</h3>
+            <p>Reference concepts behind portable memory, orchestration, and tool abstraction.</p>
+          </a>
+          <a class="card link-card" href="https://github.com/arjun-basu001/agentic-stack/blob/main/ARCHITECTURE.md">
+            <h3>🏛️ Architecture Doc</h3>
+            <p>Detailed layered architecture and roadmap for production hardening.</p>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>Built for developers exploring enterprise Agentic AI patterns. ⭐ Star the project on GitHub.</p>
+      </div>
+    </footer>
+  </body>
+</html>
